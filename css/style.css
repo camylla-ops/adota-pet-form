@@ -1,13 +1,13 @@
 /* Reset e configurações globais para todos os elementos */
 * {
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento padrão */
-    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para todo o documento */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilização do corpo da página */
 body {
-    background-color: #f0f9f0; /* Define a cor de fundo do body */
+    background-color: #f0f9f0;
 }
 
 /* Estilização dos cabeçalhos (h1 a h5) */
@@ -16,20 +16,20 @@ h2,
 h3,
 h4,
 h5 {
-    color: #333; /* Define a cor dos títulos */
+    color: #333;
 }
 
 /* Estilização de parágrafos e labels */
 p,
 label {
-    color: #444; /* Define a cor dos textos e dos labels */
+    color: #444;
 }
 
 /* Estilização geral dos inputs */
 input {
-    border: none; /* Remove todas as bordas padrão */
-    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior fina */
-    padding: 10px 0; /* Aplica espaçamento vertical */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
 }
 
 /* Define largura fixa para inputs de texto, número, data, arquivo e textarea */
@@ -38,72 +38,74 @@ input[type="number"],
 input[type="date"],
 input[type="file"],
 textarea {
-    width: 400px; /* Largura fixa de 400px para esses elementos */
+    width: 100%; /* Agora os inputs ocuparão 100% da largura do container */
+    max-width: 400px; /* Limita a largura máxima para não ultrapassar 400px */
 }
 
 /* Estilização específica para textarea */
 textarea {
-    padding: 10px 5px; /* Aplica espaçamento interno no textarea */
+    padding: 10px 5px;
 }
 
 /* Cabeçalho da página */
 .header {
-    height: 160px; /* Define a altura do cabeçalho */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #a8d5ba; /* Cor de fundo do cabeçalho */
+    height: 160px;
+    padding: 20px;
+    background-color: #a8d5ba;
 }
 
 /* Estilização do título (h3) dentro do cabeçalho */
 .header h3 {
-    color: #fff; /* Texto em branco */
-    margin-top: 0; /* Remove a margem superior */
+    color: #fff;
+    margin-top: 0;
 }
 
 /* Container do formulário */
 .form-container {
-    background-color: #fdfdfd; /* Cor de fundo do container do formulário */
-    width: 60%; /* Define a largura como 60% do container pai */
-    margin: 0 auto; /* Centraliza horizontalmente o container */
-    position: relative; /* Permite posicionamento relativo para ajustes */
-    top: -62px; /* Desloca o container para cima, sobrepondo parte do cabeçalho */
+    background-color: #fdfdfd;
+    width: 80%; /* Para dispositivos móveis, diminuímos a largura */
+    max-width: 900px; /* Limita a largura máxima */
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
 }
 
 /* Cabeçalho do formulário */
 .form-header {
-    border-bottom: 1px solid #dfdfdf; /* Linha inferior para separar o cabeçalho do corpo */
-    height: 45px; /* Altura fixa do cabeçalho do formulário */
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
 }
 
 /* Estilização do parágrafo dentro do cabeçalho do formulário */
 .form-header p {
-    color: #556B2F; /* Cor do texto */
-    border-bottom: 2px solid #556B2F; /* Linha inferior para destaque */
-    width: 100px; /* Largura fixa */
-    text-align: center; /* Centraliza o texto */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    text-transform: uppercase; /* Converte o texto para maiúsculas */
-    height: 45px; /* Altura fixa */
-    line-height: 45px; /* Centraliza verticalmente o texto */
+    color: #556B2F;
+    border-bottom: 2px solid #556B2F;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
 }
 
 /* Corpo do formulário */
 .form-body {
-    padding: 30px; /* Espaçamento interno para o conteúdo do formulário */
+    padding: 30px;
 }
 
 /* Título do formulário */
 .form-title {
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    margin-bottom: 15px;
 }
 
 /* Espaçamento para parágrafos dentro do corpo do formulário */
 .form-body p {
-    margin-bottom: 20px; /* Espaçamento inferior para separar os parágrafos */
+    margin-bottom: 20px;
 }
 
 /* Classe para indicar campos obrigatórios */
 .required-field {
-    color: #d80835; /* Cor vermelha para destacar os campos obrigatórios */
+    color: #d80835;
 }
 
 /* Agrupamento de inputs com espaçamento inferior */
@@ -118,14 +120,14 @@ textarea {
 
 /* Caixa para inputs opcionais, exibidos lado a lado */
 .optional-box {
-    display: inline-block; /* Permite que os elementos fiquem na mesma linha */
-    margin: 0 30px 30px 0; /* Define as margens para espaçamento */
+    display: inline-block;
+    margin: 0 30px 30px 0;
 }
 
 /* Estilização de itens de lista em inputs opcionais */
 .optional-list li {
-    list-style: none; /* Remove os marcadores padrão da lista */
-    margin-bottom: 5px; /* Espaçamento inferior entre os itens */
+    list-style: none;
+    margin-bottom: 5px;
 }
 
 /* Espaçamento para parágrafos dentro de box-input */
@@ -135,23 +137,56 @@ textarea {
 
 /* Botão de submissão */
 .btn-submit {
-    background-color: #a8d5ba; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto */
-    border: 2px solid transparent; /* Borda invisível inicialmente */
-    width: 150px; /* Largura fixa do botão */
-    height: 50px; /* Altura fixa do botão */
-    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
-    text-transform: uppercase; /* Converte o texto para maiúsculas */
-    transition: 0.5s; /* Transição suave para mudanças de estado (hover) */
+    background-color: #a8d5ba;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 
 /* Efeito hover para o botão de submissão */
 .btn-submit:hover {
-    background-color: #8cbfa1; /* Altera a cor de fundo ao passar o mouse */
-    border-color: #8cbfa1; /* Exibe a borda com a mesma cor do fundo */
-    color: #fff; /* Mantém o texto em branco */
+    background-color: #8cbfa1;
+    border-color: #8cbfa1;
+    color: #fff;
 }
 
+/* Media query para telas menores (ex: dispositivos móveis) */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Aumenta a largura para 90% em telas menores */
+        top: 0; /* Remove o deslocamento do topo */
+    }
+
+    .box-input {
+        margin-bottom: 20px; /* Menor espaço entre os campos de input */
+    }
+
+    .optional-box {
+        display: block; /* Torna os campos opcionais em uma coluna única */
+        margin: 10px 0; /* Ajusta a margem */
+    }
+
+    .optional-list li {
+        margin-bottom: 15px; /* Maior espaço entre os itens da lista */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="file"],
+    textarea {
+        width: 100%; /* Inputs ocupando 100% da largura disponível */
+        max-width: none; /* Remove o limite máximo de largura */
+    }
+
+    .btn-submit {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    }
+}
 /* Estilização para ícones (ex: ícones de pata) */
 .paw-icons {
     text-align: center; /* Centraliza os ícones */
@@ -174,3 +209,6 @@ textarea {
     transform: translateY(-50%); /* Ajusta a centralização vertical */
     color: #666; /* Define a cor do texto */
 }
+
+
+
