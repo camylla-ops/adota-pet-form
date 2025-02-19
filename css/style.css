@@ -1,0 +1,176 @@
+/* Reset e configurações globais para todos os elementos */
+* {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para todo o documento */
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: #f0f9f0; /* Define a cor de fundo do body */
+}
+
+/* Estilização dos cabeçalhos (h1 a h5) */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #333; /* Define a cor dos títulos */
+}
+
+/* Estilização de parágrafos e labels */
+p,
+label {
+    color: #444; /* Define a cor dos textos e dos labels */
+}
+
+/* Estilização geral dos inputs */
+input {
+    border: none; /* Remove todas as bordas padrão */
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior fina */
+    padding: 10px 0; /* Aplica espaçamento vertical */
+}
+
+/* Define largura fixa para inputs de texto, número, data, arquivo e textarea */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px; /* Largura fixa de 400px para esses elementos */
+}
+
+/* Estilização específica para textarea */
+textarea {
+    padding: 10px 5px; /* Aplica espaçamento interno no textarea */
+}
+
+/* Cabeçalho da página */
+.header {
+    height: 160px; /* Define a altura do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #a8d5ba; /* Cor de fundo do cabeçalho */
+}
+
+/* Estilização do título (h3) dentro do cabeçalho */
+.header h3 {
+    color: #fff; /* Texto em branco */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: #fdfdfd; /* Cor de fundo do container do formulário */
+    width: 60%; /* Define a largura como 60% do container pai */
+    margin: 0 auto; /* Centraliza horizontalmente o container */
+    position: relative; /* Permite posicionamento relativo para ajustes */
+    top: -62px; /* Desloca o container para cima, sobrepondo parte do cabeçalho */
+}
+
+/* Cabeçalho do formulário */
+.form-header {
+    border-bottom: 1px solid #dfdfdf; /* Linha inferior para separar o cabeçalho do corpo */
+    height: 45px; /* Altura fixa do cabeçalho do formulário */
+}
+
+/* Estilização do parágrafo dentro do cabeçalho do formulário */
+.form-header p {
+    color: #556B2F; /* Cor do texto */
+    border-bottom: 2px solid #556B2F; /* Linha inferior para destaque */
+    width: 100px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-transform: uppercase; /* Converte o texto para maiúsculas */
+    height: 45px; /* Altura fixa */
+    line-height: 45px; /* Centraliza verticalmente o texto */
+}
+
+/* Corpo do formulário */
+.form-body {
+    padding: 30px; /* Espaçamento interno para o conteúdo do formulário */
+}
+
+/* Título do formulário */
+.form-title {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+/* Espaçamento para parágrafos dentro do corpo do formulário */
+.form-body p {
+    margin-bottom: 20px; /* Espaçamento inferior para separar os parágrafos */
+}
+
+/* Classe para indicar campos obrigatórios */
+.required-field {
+    color: #d80835; /* Cor vermelha para destacar os campos obrigatórios */
+}
+
+/* Agrupamento de inputs com espaçamento inferior */
+.box-input {
+    margin-bottom: 35px; /* Espaçamento inferior entre os grupos de inputs */
+}
+
+/* Define que um elemento seja exibido como bloco */
+.block {
+    display: block;
+}
+
+/* Caixa para inputs opcionais, exibidos lado a lado */
+.optional-box {
+    display: inline-block; /* Permite que os elementos fiquem na mesma linha */
+    margin: 0 30px 30px 0; /* Define as margens para espaçamento */
+}
+
+/* Estilização de itens de lista em inputs opcionais */
+.optional-list li {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    margin-bottom: 5px; /* Espaçamento inferior entre os itens */
+}
+
+/* Espaçamento para parágrafos dentro de box-input */
+.box-input p {
+    margin-bottom: 15px; /* Espaçamento inferior para separar o texto dos inputs */
+}
+
+/* Botão de submissão */
+.btn-submit {
+    background-color: #a8d5ba; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: 2px solid transparent; /* Borda invisível inicialmente */
+    width: 150px; /* Largura fixa do botão */
+    height: 50px; /* Altura fixa do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    text-transform: uppercase; /* Converte o texto para maiúsculas */
+    transition: 0.5s; /* Transição suave para mudanças de estado (hover) */
+}
+
+/* Efeito hover para o botão de submissão */
+.btn-submit:hover {
+    background-color: #8cbfa1; /* Altera a cor de fundo ao passar o mouse */
+    border-color: #8cbfa1; /* Exibe a borda com a mesma cor do fundo */
+    color: #fff; /* Mantém o texto em branco */
+}
+
+/* Estilização para ícones (ex: ícones de pata) */
+.paw-icons {
+    text-align: center; /* Centraliza os ícones */
+    font-size: 2.5rem; /* Define um tamanho grande para os ícones */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    opacity: 0.8; /* Aplica leve transparência */
+}
+
+/* Grupo de inputs com elementos adicionais */
+.input-group {
+    position: relative; /* Permite o posicionamento absoluto dos elementos filhos */
+    display: inline-block; /* Exibe o grupo como inline-block */
+}
+
+/* Elemento para exibir unidades (ex: kg, m²) dentro de um input */
+.unit {
+    position: absolute; /* Posiciona o elemento de forma absoluta dentro do grupo */
+    right: 10px; /* Alinha à direita com 10px de distância */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a centralização vertical */
+    color: #666; /* Define a cor do texto */
+}

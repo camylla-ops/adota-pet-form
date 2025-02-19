@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <!-- Define a codificação de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- Garante compatibilidade com o Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Configura a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>Cadastre seu Pet para Adoção</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="/form/css/style.css" />
+  </head>
+  <body>
+    <!-- Container principal que engloba todo o conteúdo -->
+    <div class="container">
+      <!-- Cabeçalho da página -->
+      <div class="header">
+       
+        <h3>Cadastre seu Pet para encontrar um novo lar!</h3>
+      </div>
+      <!-- Container que agrupa o formulário -->
+      <div class="form-container">
+        <!-- Cabeçalho do formulário -->
+        <div class="form-header">
+          <!-- Título do formulário -->
+          <p>Formulário</p>
+        </div>
+        <!-- Corpo do formulário -->
+        <div class="form-body">
+          <!-- Título principal do formulário -->
+          <h1 class="form-title">Adote um Pet!</h1>
+          <!-- Instrução para o usuário -->
+          <p>
+            Descreva as características do pet e marque as opções disponíveis
+          </p>
+          <!-- Início do formulário -->
+          <form>
+            <!-- Campo para o nome do pet -->
+            <div class="box-input">
+              <label for="title">Nome do Pet <span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Digite o nome do pet"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+            <!-- Campo para informar a idade do pet -->
+            <div class="box-input">
+              <label for="price">Idade <span class="required-field">*</span></label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                class="block"
+                placeholder="Digite a idade"
+                required
+              />
+            </div>
+            <!-- Área de texto para descrever as características do pet -->
+            <div class="box-input">
+              <label for="description">Descrição <span class="required-field">*</span></label>
+              <textarea
+                name="description"
+                id="description"
+                class="block"
+                placeholder="Descreva as características do pet, como temperamento e saúde"
+              ></textarea>
+            </div>
+            <!-- Campo para informar a raça do pet -->
+            <div class="box-input">
+              <label for="brand">Raça <span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="brand"
+                id="brand"
+                class="block"
+                placeholder="Digite a raça do pet"
+                required
+              />
+            </div>
+            <!-- Campo para informar o porte do pet -->
+            <div class="box-input">
+              <label for="model">Porte <span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="model"
+                id="model"
+                class="block"
+                placeholder="Digite o porte (pequeno, médio, grande)"
+                required
+              />
+            </div>
+            <!-- Campo para informar o peso do pet -->
+            <div class="box-input">
+              <label for="mileage">Peso <span class="required-field">*</span></label>
+              <input
+                type="number"
+                name="mileage"
+                id="mileage"
+                class="block"
+                placeholder="Digite o peso do pet (kg)"
+                required
+              />
+            </div>
+            <!-- Campo para informar a data de cadastro -->
+            <div class="box-input">
+              <label for="purchase_date">Data de Cadastro <span class="required-field">*</span></label>
+              <input
+                type="date"
+                name="purchase_date"
+                id="purchase_date"
+                class="block"
+                required
+              />
+            </div>
+            <!-- Opção para selecionar o sexo do pet -->
+            <div class="box-input">
+              <p>Sexo do Pet: <span class="required-field">*</span></p>
+              <input type="radio" id="macho" name="gender" value="Macho" />
+              <label for="macho">Macho</label>
+              <input type="radio" id="femea" name="gender" value="Fêmea" />
+              <label for="femea">Fêmea</label>
+            </div>
+            <!-- Opções de procedimentos realizados no pet -->
+            <div class="optional-box">
+              <p>Procedimentos</p>
+              <ul class="optional-list">
+                <li>
+                  <input type="checkbox" id="vaccinated" name="optional[]" value="vaccinated" />
+                  <label for="vaccinated">Vacinado</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="castrated" name="optional[]" value="castrated" />
+                  <label for="castrated">Castrado</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="vermifugado" name="optional[]" value="vermifugado" />
+                  <label for="vermifugado">Vermifugado</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="microchip" name="optional[]" value="microchip" />
+                  <label for="microchip">Microchip</label>
+                </li>
+              </ul>
+            </div>
+            <!-- Outras opções adicionais -->
+            <div class="optional-box">
+              <ul class="optional-list">
+                <li>
+                  <input type="checkbox" id="adestrado" name="optional[]" value="adestrado" />
+                  <label for="adestrado">Adestrado</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="registro" name="optional[]" value="registro" />
+                  <label for="registro">Possui Registro</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="pedigree" name="optional[]" value="pedigree" />
+                  <label for="pedigree">Tem Pedigree</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="identificacao" name="optional[]" value="identificacao" />
+                  <label for="identificacao">Chip Identificador</label>
+                </li>
+              </ul>
+            </div>
+            <!-- Campo para upload de fotos do pet -->
+            <div class="box-input">
+              <p>Fotos do Pet: <span class="required-field">*</span></p>
+              <input
+                type="file"
+                multiple
+                accept="image/png, image/jpg"
+                id="images"
+                name="images"
+                required
+              />
+            </div>
+            <!-- Botão para enviar o formulário -->
+            <input type="submit" value="Enviar" class="btn-submit" />
+          </form>
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
